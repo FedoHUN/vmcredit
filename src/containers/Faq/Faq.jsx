@@ -14,7 +14,7 @@ function Faq() {
   }
 
   return(
-    <div className="min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
+    <div className="flex min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
       <Navbar />
       <h1 className='text-3xl text-center text-transparent bg-clip-text font-bold bg-silver-gradient mt-10'>FAQ</h1>
       <h2 className="text-xl text-center m-4">Got questions? We've got answers. Check out our frequently asked questions to find the information you need.</h2>

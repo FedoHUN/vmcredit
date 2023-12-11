@@ -4,7 +4,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 function Pricing() {
   return(
-    <div className="min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
+    <div className="flex min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
       <Navbar />
       <h1 className='text-2xl text-center text-transparent bg-clip-text font-semibold bg-silver-gradient mt-10'>Credit Card Options:</h1>
       <h2 className="text-xl text-center m-4">Explore our range of credit cards, each designed to fit your budget and lifestyle. Choose the perfect one for you!</h2>
