@@ -19,12 +19,12 @@ function Navbar() {
         <Link to='/pricing'><li className="p-4">Pricing</li></Link>
         <Link to='/faq'><li className="p-4">FAQ</li></Link>
         <Link to='/benefits'><li className="p-4">Benefits</li></Link>
-        <li className="p-4">Contact</li>
+        <Link to='/contact'><li className="p-4">Contact</li></Link>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <IoCloseOutline size={20} /> : <IoMenu size={20} />}
       </div>
-      <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#060606] ease-in-out duration-500' : 'h-full ease-in-out duration-500 fixed left-[-100%]' }>
+      <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#060606] ease-in-out duration-500' : 'top-0 w-[60%] h-full ease-in-out duration-500 fixed left-[-100%]' }>
         <h1 className="w-full text-2xl font-bold bg-silver-gradient bg-clip-text text-transparent m-4">MVCredit</h1>
         <ul className="uppercase p-4">
           <Link to='/'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Home</li></Link>
@@ -32,7 +32,7 @@ function Navbar() {
           <Link to='/pricing'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Pricing</li></Link>
           <Link to='/faq'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">FAQ</li></Link>
           <Link to='/benefits'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Benefits</li></Link>
-          <li className="p-4">Contact</li>
+          <Link to='/contact'><li className="p-4">Contact</li></Link>
         </ul>
       </div>
     </div>
