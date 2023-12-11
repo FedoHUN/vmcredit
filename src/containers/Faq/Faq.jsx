@@ -16,26 +16,26 @@ function Faq() {
   return(
     <div className="flex min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
       <Navbar />
-      <h1 className='text-3xl text-center text-transparent bg-clip-text font-bold bg-silver-gradient mt-10'>FAQ</h1>
-      <h2 className="text-xl text-center m-4">Got questions? We've got answers. Check out our frequently asked questions to find the information you need.</h2>
+      <h1 className='text-3xl text-center text-transparent bg-clip-text font-bold bg-silver-gradient mt-10 md:text-4xl'>FAQ</h1>
+      <h2 className="text-xl text-center m-4 md:text-2xl">Got questions? We've got answers. Check out our frequently asked questions to find the information you need.</h2>
       <div className="w-full p-2">
         <ul className="flex flex-col">
           {data.map((item, i) => (
             <li className="bg-[#031B28] my-2 shadow-lg rounded-xl">
-              <h2 className="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer" onClick={() => toggle(i)}>
+              <h2 className="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer md:text-xl md:p-5" onClick={() => toggle(i)}>
                 <span>{item.question}</span>
-                {selected === i ? <CiCircleMinus className="flex-shrink-0 w-5 h-5" /> : <CiCirclePlus className="flex-shrink-0 w-5 h-5"/>}
+                {selected === i ? <CiCircleMinus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7" /> : <CiCirclePlus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7"/>}
               </h2>
               <div className={
                 selected === i ? 'border-l-2 border-[#E5B80B] max-h-36 transition-all duration-500 rounded-bl-lg' : 'border-l-2 border-[#E5B80B] max-h-0 overflow-hidden transition-all duration-500'
                 }>
-                <p className="p-3">{item.answer}</p>
+                <p className="p-3 md:text-xl">{item.answer}</p>
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <h2 className="text-xl text-center m-4">Still have questions? Contact our dedicated support team. We're here to help!</h2>
+      <h2 className="text-xl text-center m-4 md:text-2xl">Still have questions? Contact our dedicated support team. We're here to help!</h2>
     </div>
   );
 }
