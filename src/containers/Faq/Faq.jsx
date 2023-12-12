@@ -14,28 +14,30 @@ function Faq() {
   }
 
   return(
-    <div className="flex min-h-screen max-h-fit flex-col items-center justify-start relative bg-rich-gradient px-2 py-4 text-white">
+    <div className="min-h-screen max-h-fit bg-rich-gradient">
       <Navbar />
-      <h1 className='text-3xl text-center text-transparent bg-clip-text font-bold bg-silver-gradient mt-10 md:text-4xl'>FAQ</h1>
-      <h2 className="text-xl text-center m-4 md:text-2xl">Got questions? We've got answers. Check out our frequently asked questions to find the information you need.</h2>
-      <div className="w-full p-2">
-        <ul className="flex flex-col">
-          {data.map((item, i) => (
-            <li className="bg-[#031B28] my-2 shadow-lg rounded-xl">
-              <h2 className="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer md:text-xl md:p-5" onClick={() => toggle(i)}>
-                <span>{item.question}</span>
-                {selected === i ? <CiCircleMinus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7" /> : <CiCirclePlus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7"/>}
-              </h2>
-              <div className={
-                selected === i ? 'border-l-2 border-[#E5B80B] max-h-36 transition-all duration-500 rounded-bl-lg' : 'border-l-2 border-[#E5B80B] max-h-0 overflow-hidden transition-all duration-500'
-                }>
-                <p className="p-3 md:text-xl">{item.answer}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col items-center justify-start relative px-4 py-8 text-white md:p-8 lg:py-12">
+        <h1 className='text-3xl text-center text-transparent bg-clip-text font-bold bg-silver-gradient md:text-4xl lg:text-6xl'>FAQ</h1>
+        <h2 className="text-xl text-center m-4 md:text-2xl lg:text-4xl 2xl:max-w-6xl">Got questions? We've got answers. Check out our frequently asked questions to find the information you need.</h2>
+        <div className="w-full p-2 2xl:max-w-5xl">
+          <ul className="flex flex-col">
+            {data.map((item, i) => (
+              <li className="bg-[#031B28] my-2 shadow-lg rounded-xl">
+                <h2 className="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer md:text-xl md:p-5 lg:text-3xl 2xl:text-xl" onClick={() => toggle(i)}>
+                  <span>{item.question}</span>
+                  {selected === i ? <CiCircleMinus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7 lg:w-9 lg:h-9" /> : <CiCirclePlus className="flex-shrink-0 w-5 h-5 md:w-7 md:h-7 lg:w-10 lg:h-10"/>}
+                </h2>
+                <div className={
+                  selected === i ? 'border-l-2 border-[#E5B80B] max-h-36 transition-all duration-500 rounded-bl-lg' : 'border-l-2 border-[#E5B80B] max-h-0 overflow-hidden transition-all duration-500'
+                  }>
+                  <p className="p-3 md:text-xl lg:text-2xl">{item.answer}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <h2 className="text-xl text-center m-4 md:text-2xl lg:text-3xl">Still have questions? Contact our dedicated support team. We're here to help!</h2>
       </div>
-      <h2 className="text-xl text-center m-4 md:text-2xl">Still have questions? Contact our dedicated support team. We're here to help!</h2>
     </div>
   );
 }
