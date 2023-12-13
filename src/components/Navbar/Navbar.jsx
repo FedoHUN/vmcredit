@@ -14,7 +14,7 @@ function Navbar() {
     <div className="flex w-full justify-between items-center h-12 max-w-[1240px] mx-auto px-4 text-white lg:h-14">
       <img className='w-20 lg:w-28' src={Logo} alt="MVCredit" />
       <ul className="hidden md:flex md:text-lg lg:text-2xl">
-        <Link to='/'><li className="p-4">Home</li></Link>
+        <Link to='/vmcredit'><li className="p-4">Home</li></Link>
         <Link to='/features'><li className="p-4">Features</li></Link>
         <Link to='/pricing'><li className="p-4">Pricing</li></Link>
         <Link to='/faq'><li className="p-4">FAQ</li></Link>
