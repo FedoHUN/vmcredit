@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mvcredit/static/css/main.f0158041.css",
+    "main.js": "/mvcredit/static/js/main.c80cd1b0.js",
+    "static/media/iphone.png": "/mvcredit/static/media/iphone.d02a752086b6da8cce5e.png",
+    "static/media/logo.png": "/mvcredit/static/media/logo.61df8a7d0b4a3f7c4ea0.png",
+    "index.html": "/mvcredit/index.html",
+    "main.f0158041.css.map": "/mvcredit/static/css/main.f0158041.css.map",
+    "main.c80cd1b0.js.map": "/mvcredit/static/js/main.c80cd1b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0158041.css",
+    "static/js/main.c80cd1b0.js"
+  ]
+}
