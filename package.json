@@ -1,7 +1,7 @@
 {
   "name": "vmcredit",
   "version": "0.1.0",
-  "homepage": "https://FedoHUN.github.io/mvcredit",
+  "homepage": "https://fedohun.github.io/mvcredit",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
