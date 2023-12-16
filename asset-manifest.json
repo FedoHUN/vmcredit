@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vmcredit/static/css/main.f0158041.css",
-    "main.js": "/vmcredit/static/js/main.90402cd6.js",
+    "main.js": "/vmcredit/static/js/main.1239a08f.js",
     "static/media/iphone.png": "/vmcredit/static/media/iphone.d02a752086b6da8cce5e.png",
     "static/media/logo.png": "/vmcredit/static/media/logo.61df8a7d0b4a3f7c4ea0.png",
     "index.html": "/vmcredit/index.html",
     "main.f0158041.css.map": "/vmcredit/static/css/main.f0158041.css.map",
-    "main.90402cd6.js.map": "/vmcredit/static/js/main.90402cd6.js.map"
+    "main.1239a08f.js.map": "/vmcredit/static/js/main.1239a08f.js.map"
   },
   "entrypoints": [
     "static/css/main.f0158041.css",
-    "static/js/main.90402cd6.js"
+    "static/js/main.1239a08f.js"
   ]
 }
