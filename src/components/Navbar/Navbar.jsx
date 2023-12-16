@@ -27,7 +27,7 @@ function Navbar() {
       <div className={nav ? 'left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#060606] ease-in-out duration-500 fixed z-10' : 'top-0 w-[60%] h-full ease-in-out duration-500 fixed left-[-100%] z-10' }>
         <h1 className="w-full text-2xl font-bold bg-silver-gradient bg-clip-text text-transparent m-4">MVCredit</h1>
         <ul className="uppercase p-4">
-          <Link to='/'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Home</li></Link>
+          <Link to='/vmcredit'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Home</li></Link>
           <Link to='/features'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Features</li></Link>
           <Link to='/pricing'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">Pricing</li></Link>
           <Link to='/faq'><li className="p-4 border-b border-gray-600 hover:bg-gray-600">FAQ</li></Link>
